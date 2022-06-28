@@ -1,0 +1,77 @@
+// For Images and the Name of Product, barista, price and amount
+const list = [
+  {
+    id: 1,
+    coffee: "Black Coffee",
+    barista: "Aldi",
+    price: 10000,
+    img: "https://upload.wikimedia.org/wikipedia/commons/4/45/A_small_cup_of_coffee.JPG",
+    amount: 1,
+  },
+  {
+    id: 2,
+    coffee: "Latte Coffee",
+    barista: "Akbar",
+    price: 100000,
+    img: "https://majalah.ottenstatic.com/uploads/2015/07/shutterstock_223511062.jpg",
+    amount: 1,
+  },
+  {
+    id: 3,
+    coffee: "Cappuchino Coffee",
+    barista: "Aldi",
+    price: 120000,
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRETz5Bcl2b_5vlO6_fOu_n7NEdcgGLo5C-DQ&usqp=CAU",
+    amount: 1,
+  },
+  {
+    id: 4,
+    coffee: "Americano Coffee",
+    barista: "Akbar",
+    price: 12000,
+    img: "https://cdn.buttercms.com/AB7ud4YSE6nmOX0iGlgA",
+    amount: 1,
+  },
+  {
+    id: 5,
+    coffee: "Espresso Coffee",
+    barista: "Fadil",
+    price: 100000,
+    img: "data:image/jpeg;base64,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",
+    amount: 1,
+  },
+  {
+    id: 6,
+    coffee: "Mocha Coffee",
+    barista: "Fadil",
+    price: 150000,
+    img: "https://food-images.files.bbci.co.uk/food/recipes/the_perfect_mocha_coffee_29100_16x9.jpg",
+    amount: 1,
+  },
+  {
+    id: 7,
+    coffee: "Macchiato Coffee",
+    barista: "Fadil",
+    price: 15000,
+    img: "https://assets-pergikuliner.com/uploads/bootsy/image/14027/medium_medium_Caramel_Macchiato__www.allfoodsrecipes.com_.jpg",
+    amount: 1,
+  },
+  {
+    id: 8,
+    coffee: "Red Eye Coffee",
+    barista: "Aldi",
+    price: 30000,
+    img: "https://www.starbucksathome.com/ca/sites/default/files/styles/recipe_ingredient/public/2021-03/Classic%20Red%20Eye_0.jpg?itok=XTJW7ESz",
+    amount: 1,
+  },
+  {
+    id: 9,
+    coffee: "Cortado Coffee",
+    barista: "Akbar",
+    price: 30000,
+    img: "https://perfectdailygrind.com/wp-content/uploads/2020/03/Cortadito-1.png",
+    amount: 1,
+  },
+];
+
+export default list;
